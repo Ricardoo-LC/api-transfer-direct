@@ -41,7 +41,7 @@ public class OrdersController : ControllerBase
         
         return CreatedAtAction(nameof(GetAllOrders), new { id = createdOrder.Id }, new
         {
-            Order = createdOrder.Id,
+            Order = createdOrder,
             Token = token
         });
     }
